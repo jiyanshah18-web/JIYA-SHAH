@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f7f5ef;
+    color: #222;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    background: #111111;
+    color: white;
+
+    padding: 55px 6% 0;
+}
+
+.hero h1 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(65px, 8vw, 120px);
+
+    line-height: 0.9;
+
+    letter-spacing: -5px;
+
+    max-width: 1300px;
+}
+
+.hero h1 span {
+    display: block;
+
+    color: #dfb83f;
+}
+
+.dek {
+    max-width: 900px;
+
+    margin-top: 60px;
+    margin-bottom: 45px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 21px;
+
+    line-height: 1.5;
+
+    color: #ddd;
+}
+
+.byline {
+    margin: 0;
+
+    padding-bottom: 65px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    color: #aaa;
+}
+
+
+/* ================================
+   FOUR NUMBERS
+================================ */
+
+.numbers {
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    background: white;
+
+    border-top: 6px solid #dfb83f;
+
+    box-shadow: 0 12px 35px rgba(0,0,0,.12);
+}
+
+.number-box {
+    min-height: 220px;
+
+    padding: 38px 32px;
+
+    background: white;
+
+    border-right: 1px solid #ddd;
+}
+
+.number-box:last-child {
+    border-right: none;
+}
+
+.big-number {
+    margin-bottom: 20px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 45px;
+
+    font-weight: bold;
+
+    line-height: 1;
+
+    color: #111;
+}
+
+.number-title {
+    max-width: 230px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    line-height: 1.35;
+
+    color: #333;
+}
+
+.number-sub {
+    margin-top: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    color: #888;
+}
+
+
+/* ================================
+   MAIN ARTICLE
+================================ */
+
+main {
+    width: 100%;
+
+    max-width: 780px;
+
+    margin: 0 auto;
+
+    padding: 90px 25px 100px;
+}
+
+main p {
+    margin: 0 0 30px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 19px;
+
+    line-height: 1.8;
+
+    color: #292929;
+}
+
+
+/* ================================
+   CHARTS
+================================ */
+
+.chart {
+    margin: 55px 0 65px;
+
+    padding: 0;
+}
+
+.chart img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+}
+
+.chart figcaption {
+    margin-top: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    color: #777;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    padding: 45px 20px;
+
+    background: #111;
+
+    border-top: 5px solid #dfb83f;
+
+    text-align: center;
+
+    color: #999;
+}
+
+footer p {
+    margin: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+    .hero {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .hero h1 {
+        font-size: 75px;
+    }
+
+    .numbers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .number-box:nth-child(2) {
+        border-right: none;
+    }
+
+    .number-box {
+        border-bottom: 1px solid #ddd;
+    }
+
+    main {
+        padding-top: 70px;
+    }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 40px 20px 0;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+
+        letter-spacing: -3px;
+    }
+
+    .dek {
+        margin-top: 40px;
+
+        font-size: 18px;
+    }
+
+    .byline {
+        padding-bottom: 40px;
+    }
+
+    .numbers {
+        grid-template-columns: 1fr;
+    }
+
+    .number-box {
+        border-right: none;
+
+        border-bottom: 1px solid #ddd;
+    }
+
+    .number-box:last-child {
+        border-bottom: none;
+    }
+
+    .big-number {
+        font-size: 38px;
+    }
+
+    main {
+        padding: 60px 20px 70px;
+    }
+
+    main p {
+        font-size: 17px;
+
+        line-height: 1.75;
+    }
+
+}
